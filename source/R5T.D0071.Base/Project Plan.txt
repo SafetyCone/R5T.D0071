@@ -1,0 +1,9 @@
+R5T.D0071.Base - Base service definitions library for the executing assembly file path provider service.
+
+The ExecutingAssembly.IFilePathProvider will give you the DLL files location.
+
+This is useful for getting the directory traditionally thought of as the "executable file" directory, but for use when code might be run by a tool (like in EF Core) or in testing (MSTest). In these cases, the entry-point assembly or executable file path as the first input argument are NOT the path you expect from running console apps.
+
+
+Goals
+
