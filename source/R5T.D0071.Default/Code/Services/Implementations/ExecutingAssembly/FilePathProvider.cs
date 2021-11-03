@@ -2,10 +2,13 @@
 using System.Reflection;
 using System.Threading.Tasks;
 
+using R5T.T0064;
+
 
 namespace R5T.D0071.ExecutingAssembly
 {
-    public class FilePathProvider : IFilePathProvider
+    [ServiceImplementationMarker]
+    public class FilePathProvider : IFilePathProvider, IServiceImplementation
     {
         public Task<string> GetFilePath()
         {
