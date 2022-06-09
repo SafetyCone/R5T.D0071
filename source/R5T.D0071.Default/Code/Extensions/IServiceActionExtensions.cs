@@ -13,7 +13,7 @@ namespace R5T.D0071.Default
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="FilePathProvider"/> implementation of <see cref="IFilePathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="FilePathProvider"/> implementation of <see cref="IFilePathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IFilePathProvider> AddFilePathProviderAction(this IServiceAction _)
         {
@@ -22,7 +22,7 @@ namespace R5T.D0071.Default
         }
 
         /// <summary>
-        /// Adds the <see cref="DirectoryPathProvider"/> implementation of <see cref="IDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="DirectoryPathProvider"/> implementation of <see cref="IDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IDirectoryPathProvider> AddDirectoryPathProviderAction(this IServiceAction _,
             IServiceAction<IFilePathProvider> filePathProviderAction,
@@ -36,7 +36,7 @@ namespace R5T.D0071.Default
         }
 
         /// <summary>
-        /// Adds the <see cref="DirectoryPathProvider"/> implementation of <see cref="IDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="DirectoryPathProvider"/> implementation of <see cref="IDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static DirectoryPathProviderActionAggregation AddDirectoryPathProviderAction(this IServiceAction _,
             IServiceAction<IStringlyTypedPathOperator> stringlyTypedPathOperatorAction)
